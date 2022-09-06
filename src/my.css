@@ -1,0 +1,38 @@
+.wrapper {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 43px 0px;
+    box-shadow: 0px 10px 30px 4px rgba(85, 105, 135, 0.03);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+  
+}
+.header-logo {
+}
+
+.header-settings {
+    display: flex;
+    gap: 34px;
+    cursor: pointer;
+
+}
+
+
+.header-items ul {
+    display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+
+}
