@@ -1,19 +1,24 @@
 .wrapper {
     max-width: 1410px;
     margin: 0 auto;
+    padding: 50px;
+    color: #FFFFFF;
+    box-shadow: 0px 10px 30px 4px rgba(85, 105, 135, 0.03);
 }
 
 .header {
     padding: 43px 0px;
     box-shadow: 0px 10px 30px 4px rgba(85, 105, 135, 0.03);
+    height: 1920px;
+    font-family: 'Roboto', sans-serif;
+    background-color:  #F5F5F5;
+   
 }
 
 .header-nav {
     display: flex;
     justify-content: space-between;
   
-}
-.header-logo {
 }
 
 .header-settings {
@@ -35,4 +40,71 @@
     align-items: center;
     gap: 41px;
 
+}
+
+.eng {
+    color:black ;
+}
+
+.Artworks {
+    display: flex;
+    max-width: 1410px;
+    margin: 0 auto;
+    top: 278px;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 166px;
+}
+
+.cat {
+    display: flex;
+    max-width: 1410px;
+    margin: 0px auto;
+    margin-top: 85px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.cat button {
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #F5F5F5;
+    border: 0px; 
+    cursor: pointer;
+}
+
+.categ {margin-right: 30px;
+}
+   
+.ph {
+    display: flex;
+    max-width: 1410px;
+    margin: 0px auto;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.art1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#art1, #art2, #art3, #art4 {
+    font-weight: 600;
+font-size: 18px;
+}
+
+.page {
+    display: flex;
+    max-width: 1410px;
+    margin: 0px auto;
+    justify-content: flex-end;
+    margin-top: 100px;
+    border-width: 20px;
+
+}
+
+.page button {
+    font-size: 30px;
 }
