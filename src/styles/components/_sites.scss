@@ -1,0 +1,57 @@
+@import '/src/styles/components/mixin';
+@import '/src/styles/components/variables';
+@import './normalize';
+
+.naming {
+    max-width: $mainMaxWidth-768;
+    margin: auto;
+    @media all and (max-width: $mainMaxWidth-768){
+        max-width: 575px;
+        align-items: center;
+        
+        gap: 20px;
+    }
+    @media all and (max-width: $mainMaxWidth-576){
+        max-width: 435px;
+        align-items: center;
+        
+        gap: 20px;
+    }
+    .line {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .hrev {
+        columns: 3;
+        display: flex;
+        justify-content: space-between;
+        .name {
+            ul {
+                li {
+                    padding-bottom: 6px;
+                    a{
+                        font-family: $font-inter;
+                        font-size: 14px;
+                        color: $pstextcolor;
+                    }
+                }
+            }
+            p {
+                font-family: $font-inter;
+                font-size: 14px;
+                color: $pstextcolor;
+                padding-top: 18px;
+            }
+        }
+    } 
+    .my-name {
+        margin-top: 24px;
+        margin-bottom: 41px;
+        a {
+        font-family: $font-inter;
+        font-size: 14px;
+        color: $pstextcolor;
+        padding-top: 18px;
+        }
+    }
+}

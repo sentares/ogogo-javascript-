@@ -1,0 +1,57 @@
+@import '/src/styles/components/mixin';
+@import '/src/styles/components/variables';
+@import './normalize';
+
+.block3-blog-posts {
+    max-width: $mainMaxWidth-768;
+    margin: 64px auto;
+    @media all and (max-width: $mainMaxWidth-768){
+        max-width: 575px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    @media all and (max-width: $mainMaxWidth-576){
+        max-width: 435px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .recent {
+        margin-bottom: 33px;
+        p {
+            font-family: $font-calc;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: $maintextcolor;
+        }
+    }
+    .blogs {
+        .name {
+            margin-bottom: 30px;
+            .my {
+                @include flex (_,space-between);
+                margin-bottom: 13px;
+                p {
+                    font-family: $font-calc;
+                    letter-spacing: 0.8px;
+                }
+                .date {
+                    font-family: $font-inter;
+                    color: $pstextcolor;
+                    font-size: 14px;
+                }
+            }
+           
+            .text {
+                a {
+                    font-size: 14px;
+                    color: $pstextcolor;
+                }
+            }
+        }
+    }
+    
+}

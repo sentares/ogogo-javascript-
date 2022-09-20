@@ -1,0 +1,108 @@
+@import '/src/styles/components/mixin';
+@import '/src/styles/components/variables';
+@import './normalize';
+
+.block2-courses {
+        max-width: $mainMaxWidth-768;
+        margin: auto;
+        @media all and (max-width: $mainMaxWidth-768){
+            max-width: 575px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        @media all and (max-width: $mainMaxWidth-576){
+            max-width: 435px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    .courses-container{
+        .courses{
+            margin-bottom: 16px;
+           p {
+            font-family: 'Cal Sans Semi Bold';
+            font-size: 20px;
+            letter-spacing: 1px;
+           }
+        }
+        .two-containers{
+
+            .next-js {
+                @include flex (20px,_);
+                padding: 16px;
+                background: #EDF2F7;
+                flex-direction: row;
+                margin-bottom: 24px;
+                .img-graph {
+                    
+                }
+                .text {
+                    .next-js-tx {
+                        @include flex (_,space-between);
+                        font-family: $font-calc;
+                        letter-spacing: 0.8px;
+                        margin-bottom: 13px;
+                        a {
+                            color: $secondtextcolor;
+                            font-size: 14px;
+                            .img {
+                                height: 9px;
+                                width: 9px;
+                                
+                            }
+                        }
+                    }
+                    .expected {
+                        font-family: $font-inter;
+                        font-size: 14px;
+                        color: $pstextcolor;
+                        margin-bottom: 12px;
+                    }
+                    .versel {
+                        font-family: $font-inter;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: $maintextcolor;
+                    }
+                }
+            }
+            .chakra_ui {
+                @include flex (20px,_);
+                padding: 16px;
+                background: #EDF2F7;
+                flex-direction: row;
+                .img-icon {
+                    
+                }
+                .text {
+                    .build {
+                        @include flex (_,space-between);
+                        font-family: $font-calc;
+                        letter-spacing: 0.8px;
+                        margin-bottom: 13px;
+                        a {
+                            color: $secondtextcolor;
+                            font-size: 14px;
+                            .img {
+                                height: 9px;
+                                width: 9px;
+                                
+                            }
+                        }
+                    }
+                    .application {
+                        font-family: $font-inter;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: $maintextcolor;
+                    }
+                }
+            }
+            
+        }
+    }
+   
+}

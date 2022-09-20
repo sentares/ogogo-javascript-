@@ -1,0 +1,144 @@
+@import '../mixin';
+@import '../variables';
+@import '../normalize';
+
+.content {
+    max-width: $mainMaxWidth-768;
+        width: 100%;
+		margin: 64px auto;
+        @media all and (max-width: $mainMaxWidth-768){
+            max-width: 575px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        @media all and (max-width: $mainMaxWidth-576){
+            max-width: 435px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    .text {
+        p {
+            font-size: 20px;
+            font-family: $font-calc;
+            margin-bottom: 12px;
+        }
+        .secondtext {
+            font-family: $font-inter;
+            font-size: 16px;
+        }
+    }
+    .sites {
+        margin-top: 65px;
+        
+        .name {
+            margin-bottom: 40px;
+            p {
+                font-family: $font-calc;
+                font-size: 20px;
+            }
+        }
+        .site1 {
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+            width: 768px;
+            height: 96px;
+            margin-bottom: 10px;
+            @media all and (max-width: $mainMaxWidth-768){
+                max-width: 575px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            @media all and (max-width: $mainMaxWidth-576){
+                max-width: 435px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .img {
+                align-items: center;
+                width: 72px;
+            }
+            .text {
+                margin-left: 24px;
+                width: 564px;
+                align-items: center;
+                .maintext {
+                    p {
+                        margin: 0;
+                        font-size: 16px;
+                        letter-spacing: 0.8px;
+                    }
+                }
+                .secondtext {
+                    p {
+                        font-family: $font-inter;
+                        font-size: 14px;
+                        color: $pstextcolor;
+                    }
+                }
+            }
+        }
+    }
+    .naming {
+        max-width: $mainMaxWidth-768;
+        margin: auto;
+        @media all and (max-width: $mainMaxWidth-768){
+            max-width: 575px;
+            align-items: center;
+            
+            gap: 20px;
+        }
+        @media all and (max-width: $mainMaxWidth-576){
+            max-width: 435px;
+            align-items: center;
+            
+            gap: 20px;
+        }
+        .line {
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        .hrev {
+            columns: 3;
+            display: flex;
+            justify-content: space-between;
+            .name {
+                ul {
+                    li {
+                        padding-bottom: 6px;
+                        a{
+                            font-family: $font-inter;
+                            font-size: 14px;
+                            color: $pstextcolor;
+                        }
+                    }
+                }
+                p {
+                    font-family: $font-inter;
+                    font-size: 14px;
+                    color: $pstextcolor;
+                    padding-top: 18px;
+                }
+            }
+        } 
+        .my-name {
+            margin-top: 24px;
+            margin-bottom: 41px;
+            a {
+            font-family: $font-inter;
+            font-size: 14px;
+            color: $pstextcolor;
+            padding-top: 18px;
+            }
+        }
+    }
+    
+}

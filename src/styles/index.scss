@@ -1,0 +1,11 @@
+@import './components/normalize';
+@import './components/header.scss';
+@import './components/about-me';
+@import './components/courses';
+@import './components/blogs';
+@import './components/video';
+@import './components/sites';
+
+#app {
+    min-height: 100vh;
+}

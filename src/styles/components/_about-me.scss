@@ -1,0 +1,120 @@
+@import '/src/styles/components/mixin';
+@import '/src/styles/components/variables';
+@import './normalize';
+
+
+
+.block1-about-me {
+    max-width: $mainMaxWidth-768;
+    width: 100%;
+	margin: 84px auto;
+    margin-bottom: 64px;
+    flex-wrap: wrap;
+    @media all and (max-width: $mainMaxWidth-768){
+        max-width: 575px;
+        align-items: center;
+    }
+    @media all and (max-width: $mainMaxWidth-576){
+        max-width: 435px;
+        align-items: center;
+    }
+    .block1-con1 {
+        .text{
+            @include flex(_,space-between);
+            @media all and (max-width: $mainMaxWidth-768){
+                max-width: 575px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            @media all and (max-width: $mainMaxWidth-576){
+                max-width: 435px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .text-1 {
+                align-items: flex-start !important;
+                max-width: 496px;
+                max-height: 220px;
+                @include flexcolumn(14px);
+                @media all and (max-width: $mainMaxWidth-768){
+                    max-width: 575px;
+                    align-items: center;
+                }
+                @media all and (max-width: $mainMaxWidth-576){
+                    max-width: 435px;
+                    align-items: center;
+                }
+                .text-1-content1 {
+                    
+                    @include flex(14px,_);
+                    p {
+                        font-weight: 600;
+                        font-size: 30px;
+                        font-family: 'Cal Sans Semi Bold';
+                    }
+                    a {
+                        @media all and (max-width: $mainMaxWidth-768){
+                            max-width: 575px;
+                            align-items: center;
+                        }
+                        @media all and (max-width: $mainMaxWidth-576){
+                            max-width: 435px;
+                            align-items: center;
+                        }
+                    }
+                }
+                .text-1-content2 {
+                    max-width: 496px;
+                    width: 496px;
+                    
+                    p {
+                        font-family: 'Inter Regular';
+                        font-weight: 400;
+                        line-height: 24px;
+                        a {
+                            color:  $secondtextcolor;
+                            img{
+                                margin-right: 6px;
+                            }
+                        }
+                    }
+                }
+                .text-1-content3 {
+                    margin-top: 15px;
+                    max-width: 496px;
+                    padding-top: 4px;
+                    padding-left: 10px;
+                    ul {
+                        @include flex (40px,_);
+                        
+                        li {
+                            
+                                .twitter {
+                                    color: #1EA1F1;
+                                    font-size: 14px !important;
+                                    font-family: 'Cal Sans Semi Bold';
+                                }
+                                .github {
+                                    color: #2D3748;
+                                    font-size: 14px !important;
+                                    font-family: 'Cal Sans Semi Bold';
+                                }
+                                .polywork {
+                                    color: $secondtextcolor;
+                                    font-size: 14px !important;
+                                    font-family: 'Cal Sans Semi Bold';
+                                }
+                            
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+    }  
+}

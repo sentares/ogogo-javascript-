@@ -1,0 +1,43 @@
+@import '/src/styles/components/mixin';
+@import '/src/styles/components/variables';
+@import './normalize';
+
+.header{
+    .header-container{
+        max-width: $mainMaxWidth-768;
+        width: 100%;
+		margin: 18px auto;
+        @media all and (max-width: $mainMaxWidth-768){
+            max-width: 575px;
+            align-items: center;
+            
+        }
+        @media all and (max-width: $mainMaxWidth-576){
+            max-width: 435px;
+            align-items: center;
+        }
+
+        .header-nav{
+            @include flex (_,space-between);
+            .name {
+                .aydar {
+                    font-family: 'Cal Sans Semi Bold';
+                    color: $secondtextcolor;
+                }
+            }
+            ul{
+                @include flex (32px,_); 
+                
+                li{
+ 
+                    a{
+                    font-family: 'Cal Sans Semi Bold';
+                    color: $secondtextcolor;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
